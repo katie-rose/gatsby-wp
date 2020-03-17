@@ -11,7 +11,7 @@ export default ({ data }) => {
           image={node.featured_media.source_url}
           title={node.title}
           excerpt={node.excerpt}
-          readMore={node.slug}
+          readMore={node.fields.slug}
         />
       ))}
     </PrimaryLayout>
