@@ -1,18 +1,20 @@
-import React from "react";
-import Header from '../components/header';
-import Footer from '../components/footer';
+import React from 'react';
+import PrimaryLayout from '../layouts/primarylayout';
 import Post from '../components/Post';
 
 export default () => (
-<div>
-<Header />
-    <div className="container">
-        <div className="row justify-content-md-center">
-            <div className="col-xs-6">
-            <Post title="This is our first post" excerpt="We are writing something to be displayed."/>
-            </div>
-        </div>
-    </div>
-    <Footer />
-</div>
+  <PrimaryLayout column='col-xs-6'>
+    <Post
+      title='This is our first post'
+      excerpt='We are writing something to be displayed.'
+    />
+    <Post
+      title='This is our second post'
+      excerpt='We are writing something to be displayed.'
+    />
+    <Post
+      title='This is our third post'
+      excerpt='We are writing something to be displayed.'
+    />
+  </PrimaryLayout>
 );
