@@ -3,14 +3,15 @@ import { graphql } from 'gatsby';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
+import innertext from 'innertext';
 
 const BlogpostLayout = ({ data }) => {
   const post = data.wordpressPost;
   return (
     <div>
       <SEO
-        title={stip(post.title)}
-        description={stip(post.excerpt)}
+        title={innertext(post.title)}
+        description={innertext(post.excerpt)}
         image={post.featured_media.source_url}
         keywords={post.categories.map(res => res.name).join(', ')}
       />
@@ -25,11 +26,6 @@ const BlogpostLayout = ({ data }) => {
     </div>
   );
 };
-
-function stip(html) {
-  let doc = new DOMParser().parseFromString(html, 'text/html');
-  return doc.body.textContent || '';
-}
 
 export default BlogpostLayout;
 
