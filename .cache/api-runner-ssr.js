@@ -1,4 +1,13 @@
-var plugins = []
+var plugins = [{
+      plugin: require('/Users/katierose/Desktop/git/gatsby-wp/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('/Users/katierose/Desktop/git/gatsby-wp/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"GatsbyJS Bootstrap","short_name":"GatsbyJS Bootstrap","start_url":"/","background_color":"#F8F9FA","theme_color":"#FFFFFF","display":"standalone"},
+    },{
+      plugin: require('/Users/katierose/Desktop/git/gatsby-wp/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      options: {"plugins":[]},
+    }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {
