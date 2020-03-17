@@ -6,8 +6,12 @@ import Post from '../components/Post';
 export default () => (
 <div>
 <Header />
-    <div className="contaienr">
-       <Post></Post>
+    <div className="container">
+        <div className="row justify-content-md-center">
+            <div className="col-xs-6">
+            <Post />
+            </div>
+        </div>
     </div>
     <Footer />
 </div>
