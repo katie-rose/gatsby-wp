@@ -9,6 +9,9 @@ const Post = props => (
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.excerpt}</Card.Text>
         <Button variant='primary'>Go somewhere</Button>
+        <Button variant='primary' href={props.readMore}>
+          Read More...
+        </Button>
       </Card.Body>
     </Card>
   </div>
