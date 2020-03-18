@@ -26,8 +26,8 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        baseUrl: `codingsrc.com`,
-        protocol: `https`,
+        baseUrl: `katierose.co`,
+        // protocol: `https`,
         hostingWPCOM: false
       }
     },

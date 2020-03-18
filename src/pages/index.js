@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PrimaryLayout from '../layouts/PrimaryLayout';
-import Post from '../components/Post';
+import Post from '../components/post';
 
 export default ({ data }) => {
   console.log(data);
